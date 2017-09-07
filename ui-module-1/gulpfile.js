@@ -59,7 +59,7 @@ gulp.task('templates', function(){
     // combine all template files (html and json) of the app into a js file
     gulp.src(templateSources)
         .pipe(plugins.if(env===PRODUCTION_MODE, plugins.minifyHtml()))
-        .pipe(plugins.angularTemplatecache('templates.js',{standalone:true}))
+        .pipe(plugins.angularTemplatecache('templates.js',{standalone:false, module:'ui-module-1'}))
         .pipe(gulp.dest(outputDir+'js/'))
         .pipe(plugins.connect.reload());
 });
@@ -109,8 +109,8 @@ gulp.task('dist', function() {
 
     // build distribution
     // concatenate module-1 js files
-    gulp.src([outputDir+'js/templates.js', outputDir+'app.js'])
-        .pipe(plugins.order([outputDir+'js/templates.js', outputDir+'app.js']))
+    gulp.src([outputDir+'app.js', outputDir+'js/templates.js'])
+        .pipe(plugins.order([outputDir+'app.js', outputDir+'js/templates.js']))
         .pipe(plugins.concat('ui-module-1.min.js'))
         .pipe(gulp.dest(distDirectory));
 

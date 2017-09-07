@@ -1,1 +1,1 @@
-angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("components/module-1/views/module-1.html","<button class=btn-filter id=button-module1>Module 1</button>");}]);
+angular.module("ui-module-1").run(["$templateCache", function($templateCache) {$templateCache.put("components/module-1/views/module-1.html","<button class=btn-filter id=button-module1>Module 1</button>");}]);
