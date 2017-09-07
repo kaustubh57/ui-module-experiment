@@ -31,7 +31,7 @@ jsSources = [
     '!test/**/*.*',
     'app/**/*-module.js',
     'app/**/*.js'];
-templateSources = ['!app/index.html', 'app/**/*.html', 'app/components/markup/js/*.json'];
+templateSources = ['!app/index.html', 'app/**/*.html', 'app/components/module-1/js/*.json'];
 appCssSources = ['app/**/*.css'];
 vendorSources = [
     'bower_components/jquery/dist/jquery.min.js',
@@ -108,15 +108,15 @@ gulp.task('dist', function() {
         .pipe(gulp.dest(demoDirectory));
 
     // build distribution
-    // concatenate markup js files
+    // concatenate module-1 js files
     gulp.src([outputDir+'js/templates.js', outputDir+'app.js'])
         .pipe(plugins.order([outputDir+'js/templates.js', outputDir+'app.js']))
-        .pipe(plugins.concat('xd-markup-ng.min.js'))
+        .pipe(plugins.concat('ui-module-1.min.js'))
         .pipe(gulp.dest(distDirectory));
 
-    // concatenate markup css files
+    // concatenate module-1 css files
     gulp.src([outputDir+'style/app.css'])
-        .pipe(plugins.concat('ui-module-main.min.css'))
+        .pipe(plugins.concat('ui-module-1.min.css'))
         .pipe(gulp.dest(distDirectory));
 
 });
