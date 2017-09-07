@@ -1,7 +1,7 @@
 {
-  "name": "ui-module-main",
+  "name": "ui-module-1",
   "version": "0.1.0",
-  "description": "A project to showcase ui modularization",
+  "description": "A project to showcase ui modularization (module 1)",
   "repository": {
     "type": "git",
     "url": "ssh://git@github.com:kaustubh57/ui-module-experiment.git"
