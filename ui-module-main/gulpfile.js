@@ -38,7 +38,8 @@ vendorSources = [
     'bower_components/jquery-ui/jquery-ui.min.js',
     'bower_components/angular/angular.min.js',
     'bower_components/angular-resource/angular-resource.min.js',
-    'bower_components/ui-router/release/angular-ui-router.min.js'];
+    'bower_components/ui-router/release/angular-ui-router.min.js',
+    'bower_components/ui-module-1/dist/ui-module-1.min.js'];
 buildDirectory = 'build/';
 distDirectory = 'dist/';
 demoDirectory = distDirectory + 'demo/';
