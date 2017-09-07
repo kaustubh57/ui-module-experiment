@@ -1,0 +1,1342 @@
+.sidebar-sub::-webkit-scrollbar * {
+    background:transparent !important;
+}
+body {
+    background-color: #e6e6e7;
+    color: #221e1f;
+    font-size: 14px;
+    font-family: Arial, Sans serif;
+}
+
+/* labels for charts, slider bars, etc. should be in Verdana font when they are done ( */
+
+h1, h2, h3 {
+    color: #6f6e73;
+    margin: 0px !important;
+}
+
+h1 {
+    font-size: 28px !important;
+    font-family: "HelvNeue Light for IBM", Arial, Sans serif;
+}
+
+/* so that the welcome page title is spaced properly */
+h1.home {
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 22px !important;
+    font-weight:lighter;
+    padding-left: 10px;
+    margin: 0px !important;
+}
+
+h3 {
+    font-size: 16px !important;
+    font-weight: lighter;
+    padding-left: 10px;
+    margin: 0px !important;
+}
+
+a.disabled,a.disabled:hover {
+    color:  #c7c7c7
+}
+
+
+/* default modal window specs */
+
+#modal_window {
+    width: 825px;
+}
+
+.modal-title {
+    font-weight:100;
+}
+
+.modal-body {
+    padding: 0px !important;
+    color: #fff !important;
+}
+
+.modal-header {
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    border: 0 !important;
+}
+
+.col-xs-1.modal_window,.col-xs-2.modal_window,.col-xs-3.modal_window,.col-xs-4.modal_window,
+.col-xs-5.modal_window,.col-xs-6.modal_window,.col-xs-7.modal_window,.col-xs-8.modal_window,
+.col-xs-9.modal_window,.col-xs-10.modal_window,.col-xs-11.modal_window,.col-xs-12.modal_window {
+    padding: 0px 15px 0px 15px;
+}
+
+.modal-footer {
+    text-align: right !important;
+}
+
+.modal-footer:before {
+    clear: both;
+}
+
+/* modal window for messages */
+
+.confirm .modal-content {
+    background-color: #464646 !important;
+    color: #fff !important;
+    border: 0px !important;
+}
+
+.modal.information,.modal.confirm, .modal.message {
+    position:fixed;
+    top: 200px;
+    right: 100px;
+    overflow:hidden;
+}
+
+.confirm .modal-content .modal-body , .modal-content .modal-body {
+    padding:20px 20px !important;
+}
+
+h3.window {
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 0px 0px 0px !important;
+}
+
+.col-xs-12.window-title {
+    height: 44px;
+    background-color: #393a3f;
+    border-bottom: 3px solid #05a7a1 ;
+    border-left: 3px solid #393a3f;
+    z-index: 99;
+}
+
+.col-xs-12.background {
+    background-color: #F8FAFB;
+}
+
+/* tab navigation for modal windows */
+
+.col-xs-12.nav {
+    padding: 0px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #d9dbdc !important;
+}
+
+ul.nav-tabs {
+    padding: 10px 0px 0px;
+    padding-left: 15px;
+}
+
+/* tab text styling */
+
+.nav > a,
+.nav > a:focus,
+.nav > a:hover,
+.nav.active > a,
+.nav.active > a:hover,
+.nav.active > a:focus {
+    color: #58595b !important;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #FFF !important;
+}
+
+.nav > a {
+    border-top: 1px solid #d9dbdc !important;
+    border-left: 1px solid #d9dbdc !important;
+    border-right: 1px solid #d9dbdc !important;
+    margin-right: -1px !important;
+    color: #58595b !important;
+}
+
+.nav > a:focus, .nav > a:hover {
+    text-decoration: none;
+    background-color: #e5f6f5 !important;
+    border-top: 2px solid #00a6a0 !important;
+    margin-right: -1px !important;
+    padding-top: 9px;
+}
+
+.nav.active > a {
+    color: #58595b !important;
+    text-decoration: none;
+    background-color: #FFF !important;
+    border-top: 2px solid #00a6a0 !important;
+    border-bottom: 1px solid #d9dbdc !important;
+    margin-right: -1px !important;
+}
+
+/* specs for images */
+
+p > img {
+    padding: 0px 8px 0px 20px;
+}
+
+a > img {
+    padding: 0px 8px 0px 20px;
+}
+
+a:first-child > img {
+    padding: 0px 8px 0px 0px;
+}
+
+li > img {
+    padding: 0px 8px 0px 20px;
+    height: 21px;
+}
+
+li:first-child > img {
+    padding: 0px 8px 0px 0px;
+    height: 21px;
+}
+
+li:last-child > img {
+    padding: 0px 0px 0px 8px;
+    height: 21px;
+}
+
+th > img {
+    height: 15px;
+}
+
+img.top {
+    vertical-align: baseline;
+}
+
+img.select_bar_icon {
+    height: 40px;
+    padding-right: 10px;
+}
+
+img.search {
+    height: 39px;
+    background-color: #fff;
+    padding: 6px;
+    margin-top: -4px;
+    margin-right: -8px;
+    border-radius: 3px;
+}
+
+img.reply {
+    height: 16px !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+.footer_items > li > img {
+    padding: 0px 10px;
+}
+
+
+img.sort {
+    padding: 0px 0px 0px 5px !important;
+    height: 15px;
+/*    padding-left: 8px !important;
+    margin-top: 2px; */
+}
+
+a.sort > img {
+    padding: 0px 0px 0px 5px !important;
+}
+
+/* STANDARD BUTTON STYLE
+button {
+    background-color: #fff !important;
+    padding: 0px 20px;
+    border-radius: 3px;
+    border: 1px solid #c7c7c7 !important;
+    color: #464646 !important;
+    font-size: 16px !important;
+    height: 40px;
+}
+
+button:active {
+    background-color: #00a6a0 !important;
+    color: #fff !important;
+    border: 1px solid #007670 !important;
+}
+
+button:hover {
+    background-color: #e5f6f5 !important;
+    color: #323232 !important;
+    border: 1px solid #00a6a0 !important;
+}
+
+button:disabled {
+    background-color: #fff;
+    border: 1px solid #959595;
+    color: #959595;
+}
+*/
+/* for hamburger buttons and close x on pop ups */
+
+.btn-link, .btn-link:hover {
+    background-color: inherit !important;
+    border:none !important;
+    color: #fff !important;
+}
+
+.close, .close:hover {
+    background-color: inherit !important;
+    border:none !important;
+    color: #fff !important;
+    height: 20px;
+    opacity:0.9;
+}
+
+.sidebar-comments.close {
+    background-color: inherit !important;
+    border:none !important;
+    color: #fff !important;
+    height: 20px;
+    opacity:0.7
+}
+
+.sidebar-comments.close:hover {
+    background-color: inherit !important;
+    border:none !important;
+    color: #fff !important;
+    height: 20px;
+    opacity:0.9
+}
+/* for filter buttons */
+button.btn-filter, .btn-filter, button.btn-filter-enabled, .btn-filter-enabled {
+    background-color: #fff !important;
+    padding: 0px 20px;
+    border-radius: 3px;
+    border: 1px solid #959595 !important;
+    color: #5a5a5a !important;
+    font-size: 16px !important;
+    height: 40px;
+    margin-right: 5px;
+}
+
+button.btn-filter:active, .btn-filter:active {
+    background-color: #00a6a0 !important;
+    color: #fff !important;
+    border: 1px solid #007670 !important;
+}
+
+button.btn-filter:hover, .btn-filter:hover {
+    background-color: #e5f6f5 !important;
+    color: #323232 !important;
+    border: 1px solid #00a6a0 !important;
+}
+
+button.btn-filter:disabled , .btn-filter:disabled {
+    background-color: #fff;
+    border: 1px solid #c7c7c7;
+    color: #c7c7c7;
+}
+
+button.btn-filter:first-child {
+    margin-right: 5px;
+}
+button.btn-filter:last-child {
+    margin-right: 0px;
+}
+
+
+/* create button with glyphicon */
+
+.create {
+    display: inline;
+    padding-top: 5px;
+}
+/* when using glyphicons with teal background, need the button to be white, and have no shadow bottom */
+button.white {
+    background-color: #fff !important;
+    border: 1px solid #929497 !important;
+    border-radius: 3px;
+    color: #393a3f !important;
+    font-size: 16px !important;
+    height: 40px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.white:hover {
+    color: #464646 !important;
+    border: 1px solid #959595 !important;
+    background-color: #e5f6f5 !important;
+}
+
+.white:disabled {
+    color: #959595 !important;
+    border: 1px solid #959595 !important;
+    background-color: #fff !important;
+}
+
+/* aligns button sets to the right */
+.button-set {
+    float: right;
+    padding: 10px 0px;
+}
+
+.button-set-bottom {
+    float: right;
+    margin-top: -10px;
+    padding-left: 5px;
+    padding-top: 5px;
+/* padding-top and margin-top are needed to make sure the buttons have proper spacing when the workspace is shrunk down and causes the button group to wrap below the user line items */
+}
+
+.button-set-comments {
+    float: right;
+    padding: 5px 0px 5px 0px;
+    margin-right: -5px;
+}
+
+/* images on buttons */
+
+.btn-primary > img, .btn-secondary-grey > img, .btn-secondary-white > img,
+.btn-primary-compact > img, .btn-secondary-grey-compact > img, .btn-secondary-white-compact > img,
+.btn-toggle > img {
+    height: 18px;
+    padding-right: 5px;
+    margin-top: 3px;
+    vertical-align:top;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary, .btn-primary-compact {
+    background-color: #00A6A0 !important;
+    border: 0px !important;
+    border-bottom: 2px solid #007670 !important;
+    border-radius: 3px;
+    color: #fff !important;
+    font-size: 16px !important;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.btn-primary {
+    height: 40px;
+    padding: 12px 30px !important;}
+
+.btn-primary-compact {
+
+    height: 30px;
+    padding: 0px 15px;
+}
+
+.btn-primary:hover, .btn-primary-compact:hover{
+    color: #fff !important;
+    border-bottom: 2px solid #007670 !important;
+    background-color: #007670 !important;
+}
+
+.btn-primary:disabled, .btn-primary-compact:disabled {
+    color: #fff !important;
+    border-bottom: 2px solid #007670 !important;
+    background-color: #7fbab7 !important;
+}
+
+/* SECONDARY BUTTON - WHITE ON A DARK BACKGROUND */
+
+.btn-secondary-white, .btn-default {
+    background-color: #959595 !important;
+    border: 1px solid #929497 !important;
+    border-bottom: 2px solid #929497 !important;
+    border-radius: 3px;
+    color: #fff !important;
+    font-size: 16px !important;
+    height: 40px;
+    text-align: center;
+    padding: 12px 30px !important;}
+
+.btn-secondary-white:hover, .btn-default:hover {
+    color: #fff !important;
+
+    border: 1px solid #5a5a5a !important;
+    border-bottom: 2px solid #5a5a5a !important;
+    background-color: #5a5a5a!important;
+}
+
+.btn-secondary-white:disabled, .btn-default:disabled {
+    color: #959595 !important;
+    border: 1px solid #959595 !important;
+    border-bottom: 2px solid #959595 !important;
+    background-color: #fff !important;
+}
+
+/* SECONDARY BUTTON - GREY ON A WHITE BACKGROUND */
+
+.btn-secondary-grey, .btn-secondary-grey-compact {
+    background-color: #c7c7c7 !important;
+    border: 0px !important;
+    border-bottom: 2px solid #959595 !important;
+    border-radius: 3px;
+    color: #464646 !important;
+    font-size: 16px !important;
+    text-align: center;
+}
+
+.btn-secondary-grey {
+    height: 40px;
+    padding: 5px 20px;
+}
+
+.btn-secondary-grey-compact {
+    height: 30px;
+    padding: 0px 15px;
+}
+
+
+.btn-secondary-grey:hover,.btn-secondary-grey-compact:hover {
+    background-color: #959595 !important;
+}
+
+.btn-secondary-grey:disabled, .btn-secondary-grey-compact:disabled {
+    color: #777677 !important;
+    border-bottom: 2px solid #959595 !important;
+    background-color: #e0e0e0 !important;
+}
+
+/* CANCEL BUTTON */
+
+.btn-cancel {
+    background-color: #777677 !important;
+    border: 0px !important;
+    border-bottom: 2px solid #5a5a5a !important;
+    border-radius: 3px;
+    color: #fff !important;
+    font-size: 16px !important;
+    text-align: center;
+}
+
+.btn-cancel {
+    height: 40px;
+    padding: 5px 20px;
+}
+
+.btn-cancel-compact {
+    height: 30px;
+    padding: 0px 15px;
+}
+
+
+.btn-cancel:hover {
+    color: #fff !important;
+    border-bottom: 2px solid #5a5a5a !important;
+    background-color: #5a5a5a !important;
+}
+
+.btn-cancel:disabled {
+    color: #e0e0e0 !important;
+    border-bottom: 2px solid #5a5a5a !important;
+    background-color: #777677 !important;
+}
+
+/* TOGGLE BUTTONS */
+
+button.btn-toggle {
+    background-color: #808287;
+    border: 1px solid #929497 !important;
+    border-radius: 3px;
+    color: #393a3f !important;
+    font-size: 16px !important;
+    height: 42px;
+    text-align: center;
+    padding: 5px 15px;
+    margin-right: 5px;
+}
+
+.btn-toggle:hover{
+    color: #fff !important;
+    border: 1px solid #1c8580 !important;
+    background-color: #00a6a0 !important;
+}
+
+.btn-toggle:disabled {
+    color: #b8babe !important;
+    border: 1px solid #929497 !important;
+    background-color: #fff !important;
+}
+
+
+
+.full-width {
+    width: 100% !important;
+}
+
+button.wide {
+    width: 100%;
+}
+
+/* base link color is black
+a {
+    color: #6d6e70 !important;
+}
+*/
+a:focus, a:hover {
+    color: #00a6a0;
+    text-decoration: none !important;
+}
+
+/* links in tables are teal */
+a.table-link {
+    color: #00a6a0;
+}
+
+
+.right {
+    float: right;
+}
+
+/* right aligned paragraphs need this padding so that the text aligns correctly with the content inside the div */
+p.right {
+    padding-right: 8px;
+}
+
+.disabled {
+    color: #b8babe;
+}
+
+img.top {
+    vertical-align: baseline;
+}
+
+/* palette specs */
+
+.col-xs-3.palette-title, .col-xs-12.window-title {
+    background-color: #393a3f;
+    border-bottom: 3px solid #05a7a1 ;
+    border-left: 3px solid #393a3f;
+    z-index: 99;
+}
+.col-xs-3.palette {
+    background-color:#e6e6e7;
+    padding: 0px;
+    border-left: 3px solid #393a3f;
+    height:auto;
+    z-index: 99;
+    float: right;
+}
+
+.palette-bottom {
+    height: 90px;
+    overflow: auto;
+}
+
+/* the webkit code styles the scrollbar in the overflow bottom palette for chrome and I believe, Safari, but
+need to code in jQuery to get this same result in Firefox */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: #d1d2d3;
+    border: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #919496;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+
+h2.palette, h2.window {
+    color: #fff;
+    padding: 10px 15px;
+}
+
+h3.palette, h3.window {
+    color: #fff;
+    padding: 10px;
+}
+
+/* down arrows for palette headings */
+.whitedownarrow {
+    padding: 0px 20px;
+}
+
+.palette-heading {
+    background-color: #919496;
+    margin: 0px;
+    color: #fff;
+    width: auto;
+}
+
+/* sidebar specs */
+
+.col-xs-3.sidebar-main {
+    background-color: #7a7879;
+    border-bottom: 2px solid #00a6a0;
+    border-left: 3px solid #393a3f;
+    padding: 0px;
+}
+
+.sidebar-comments .sidebar-main{
+    background-color: #323232;
+}
+.col-xs-3.sidebar-sub {
+    background-color:#e6e6e7;
+    padding: 0px;
+    border: 3px solid #393a3f;
+    height:550px;
+    float: right;
+}
+
+.col-xs-3.sidebar-comments {
+    background-color: #393a3f;
+    padding: 0px;
+    height:550px;
+    right: 0;
+    position: absolute;
+}
+/* sidebar/palette area */
+
+h2.sidebar {
+    color: #fff;
+    padding: 14px;
+    margin: 0px;
+    font-size: 20px !important;
+    padding-left: 40px;
+}
+
+h3.sidebar {
+    color: #fff;
+    padding: 12px 25px;
+    margin: 0px;
+}
+
+.sidebar-heading {
+    background-color: #919496;
+    margin: 0px;
+    color: #fff;
+    width: auto;
+}
+
+.palette-icon {
+    text-align:center;
+    float:left;
+    padding: 20px;
+}
+
+div.palette-icon-left {
+    width: 33%;
+    float: left;
+    text-align:center;
+    padding: 10px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+div.palette-icon-right {
+    width: 33%;
+    float: right;
+    text-align:center;
+    padding: 10px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+div.palette-icon-center {
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.clear {
+    clear: both;
+    margin-bottom: 2px;
+}
+
+/* to make glyphicons with teal background */
+span.teal {
+    background-color: #00a6a0;
+    color: #fff;
+    padding: 12px;
+    border-radius: 3px 0px 0px 3px;
+    margin-top: -3px;
+    margin-left: -21px;
+}
+
+/* white banner below the header that contains actions etc. */
+.topbar_action_icons{
+    width:22px;
+    height:22px;
+}
+
+.action_banner {
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+ul.action_items {
+    padding: 10px 10px;
+    list-style: none;
+    background-color: #fff;
+    color: #6d6e70;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #b9c5c4 !important;
+}
+
+
+.action_items > li {
+    display: inline-block;
+}
+
+.action_items > li.right {
+    float: right;
+    padding-right: 15px;
+}
+
+.col-xs-4.action_item_dropdown_title {
+    background-color: #393a3f;
+    border-bottom: 3px solid #05a7a1 ;
+    height:50px;
+    z-index: 99;
+ }
+
+.col-xs-4.action_item_dropdown {
+    background-color: #929399;
+    padding: 0px;
+    border-left: 3px solid #393a3f;
+    height:auto;
+    z-index: 99;
+    float: right;
+}
+
+h2.action_item_dropdown {
+    color: #fff;
+    padding: 10px 15px;
+}
+
+h4.action_item_dropdown {
+    color: #fff;
+    margin-top: 5px;
+}
+
+div.comments {
+    background-color: #929399;
+}
+
+div.comment_enter {
+    background-color: #929399;
+    z-index: 999;
+    padding-top: 10px;
+    height:560px;
+}
+
+textarea.comment_enter {
+    padding: 7px;
+    font-size: 14px !important;
+    color: #010101;
+    width: 100%;
+    height:auto;
+    resize: none;
+}
+
+textarea.reply_enter {
+    padding: 7px;
+    font-size: 12px !important;
+    color: #010101;
+    width: 100%;
+    height:auto;
+    margin-top: 10px;
+    resize: none;
+}
+
+button.comment_enter {
+    position:relative;
+    top: -25px;
+    right: -4px;
+    width: 55px;
+    padding: 0px;
+}
+
+div.comment_enter_text {
+    position: relative;
+}
+
+/* not used anymore i think;  to remove when confirmed that it's not needed
+img.comments {
+    height: 38px;
+}
+*/
+
+div.reply_container {
+    padding-bottom: 15px;
+}
+
+div.comment_reply_white {
+    background-color: #fff;
+    z-index: 999;
+    padding: 0px 0px 0px 10px;
+    border-left: 3px solid !important;
+}
+
+div.comment_reply_grey {
+    background-color: #efefef;
+    z-index: 999;
+    padding: 0px 0px 0px 5px;
+    margin-left: 5px;
+    border-left: 3px solid #777677 !important;
+}
+
+ul.comment_items, ul.reply_items {
+    margin-left: -30px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+ul.reply_items {
+    font-size: 12px;
+}
+
+div.nested {
+    margin: 0px -10px 0px -6px;
+    padding-right: 10px;
+}
+
+div.border {
+    border-bottom: 1px solid #424242 !important;
+    /* border-bottom: 1px solid #c7c7c7 !important; */
+    /* margin: 0px -10px 0px -11px; */
+    margin: 5px 0px 5px 2px;
+    padding-right: 10px;
+}
+
+ul.comment_items > li {
+    display: inline-block;
+    list-style: none;
+    font: 11px Verdana, Geneva, sans-serif;
+}
+
+ul.reply_items > li {
+    display: inline-block;
+    list-style: none;
+    color: #59595B;
+}
+
+ul.reply_items > li.right, ul.comment_items > li.right {
+    padding-right: 5px;
+}
+
+ul.comment_items > li.right {
+    padding-top: 6px;
+}
+
+ul.reply_items > li.right {
+    color: #05A7A1;
+}
+
+ul.comment_items > li.name {
+    font: 12px  Arial, Sans serif;
+    color: #121212
+}
+
+p.comment {
+    padding: 0px 0px 10px 10px;
+    font-size: 13px;
+    color: #424242;
+    margin-bottom: 0px;
+}
+
+hr.comment {
+    border-color: #5a5a5a !important;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+hr.reply {
+    /* border-color: #c7c7c7 !important; */
+    border-color: #e0e0e0 !important;
+    width: 100%;
+    margin: 5px 0px 5px 2px;
+}
+
+/* the webkit code styles the scrollbar in the overflow bottom palette for chrome and I believe, Safari, but
+need to code in jQuery to get this same result in Firefox */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d1d2d3;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #919496;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+/* table specs */
+.table > thead:first-child > tr:first-child > th {
+    border-top: 1px solid #d1d2d3 ;
+    border-right: 1px solid #d1d2d3;
+    border-bottom: 0px solid;
+    font-weight:normal !important;
+    color: #59595b;
+}
+
+table {
+    vertical-align: top;
+    background-color: #fff !important;
+    color: #6d6e70;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #d1d2d3 !important;
+    font-size: 14px;
+    font-family: "HelvNeue Light for IBM", Arial, Sans serif;
+}
+
+.table > thead > tr > th {
+    background-color: #f3f5f6;
+}
+
+tr:hover {
+    background-color: #E6F4F3;
+    border-left: 3px solid #17A69F;
+}
+
+thead > tr:hover {
+    background-color: #E6F4F3;
+    border-left: 0px solid #E6F4F3;
+}
+
+
+tr {
+    border: 1px solid #b8bebe;
+}
+
+th {
+    background-color: #f3f5f6;
+    border: 1px solid #d1d2d3;
+}
+
+/* th for checkmark column */
+th.checkmark {
+    width: 35px;
+    border-right: 0px !important;
+}
+
+table.history {
+    margin-top: 20px;
+}
+
+select {
+    background-color: #fff;
+    border: 1px solid #b8babe;
+    border-bottom: 2px solid #b8babe;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0px 5px;
+    height: 40px;
+    color: #393a3f !important;
+}
+
+.styled-select-full {
+    display:inline;
+}
+
+input {
+    height: 32px;
+}
+
+input.input-text {
+    padding-left: 8px;
+    height: 32px;
+}
+
+/* base input field styling */
+
+input[type="text"], input[type="date"], input[type="number"] {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #B9BABE !important;
+    background-color: #fff;
+    border-bottom: 2px solid #b8babe;
+    font-size: 14px;
+    padding: 0px 5px 0px 10px;
+    color: #393a3f !important;
+
+}
+
+.select_bar > div > input[type=text] {
+    padding: 0px 8px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #B9BABE !important;
+}
+
+option {
+    padding: 10px;
+}
+
+option:hover {
+    background-color: #e6f4f4 !important;
+}
+
+option:last-child  {
+    border-bottom: 1px solid #b9babf;
+}
+
+/* search field */
+
+div.search {
+    border: 1px solid #b9babf;
+    border-radius: 3px;
+}
+
+.search input[type="text"] {
+    padding: 0px 5px 0px 10px;
+    border-radius: 3px;
+    border: 0px solid !important;
+    height: 39px;
+}
+
+.col-xs-3, .col-xs-4, .col-xs-12 {
+    padding:10px;
+}
+
+.col-xs-3.select_bar,.col-xs-4.select_bar {
+    background-color:#e3f3f2;
+    border-right:1px solid #d1d2d3;
+    border-left:1px solid #fff;
+    border-bottom:1px solid #b9c5c4;
+    height:77px;
+}
+
+.col-xs-4.select_bar {
+    padding-top:15px !important;
+}
+
+.col-xs-12.select_bar {
+    background-color:#e6e6e7;
+    border-bottom:1px solid #d1d2d3;
+    height: auto;
+    min-height:70px;
+    padding-top: 13px;
+}
+
+
+.filter_items {
+    display:inline;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+span.label {
+    color:inherit !important;
+    font-size:inherit !important;
+    font-family:inherit !important;
+    font-weight:inherit !important;
+    padding:0px 10px 0px 2px !important;
+}
+
+span.form_label {
+    color: #000 !important;
+    font-size: 14px !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    padding: 10px 0px 5px !important;
+    display: block;
+}
+
+span.small_font {
+    font-size: 13px !important;
+}
+
+#workspace {
+    background-color:#f8fafb;
+    padding:0px 5px;
+    height:auto;
+    min-height:658px;
+    z-index:0;
+}
+
+.workspace_flex {
+    background-color:#f8fafb;
+    padding:0px 5px;
+    z-index:0;
+}
+
+#workspace.newmarkup {
+    position:absolute;
+    left:0px;
+    top: 121px;
+    height: 624px;
+}
+
+#workspace.newmarkup_full {
+    position:absolute;
+    left:0px;
+    top:119px;
+    height:641px;
+    width:100%;
+}
+
+#workspace_grid {
+    background-color:#f8fafb;
+    height:auto;
+    width:auto;
+    z-index: 200;
+}
+
+#workspace_grid .paperWithPalette {
+    display: inline-block;
+    position: relative;
+    width: 75%;
+}
+
+#workspace_grid .paperNoPalette {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+#markup_palette {
+    position:relative;
+    width: 22%;
+}
+
+#collapsePane {
+    position:absolute;
+    left:-30px;
+    z-index:9;
+}
+#paletteCollapseImage {
+    height: 61px;
+    margin-top: 250px;
+    float:right;
+    margin-right: -30px;
+}
+#paletteOpenImage {
+    height: 61px;
+    position:fixed;
+    top: 50%;
+    right: 0px;
+    z-index: 999;
+}
+
+.workspace_begin {
+    background-color:#f8fafb;
+    text-align:center;
+    color: #d9dbdc;
+    position:fixed;
+    left:150px;
+    top:350px;
+    width:550px;
+    font-size:28px;
+    padding:10px;
+    margin-left:150px;
+}
+
+.workspace_begin_full {
+    background-color:#f8fafb;
+    text-align:center;
+    color:#d9dbdc;
+    font-size:25px;
+    padding:10px;
+    margin-top:250px;
+}
+
+/* div class to push the 'pull-tab' image all the way over to the right.  For display purposes only so development can see approximately what it should look like. */
+.col-xs-1.spacer {
+    padding-top:150px;
+    margin-left:1000px;
+    z-index: 0 !important;
+}
+
+/* div class to pad out the workspace grid for display purposes only */
+div.spacer {
+    height: 220px;
+}
+
+/* div class to pad out the workspace grid for display purposes only */
+.spacer_full {
+    height:711px;
+}
+
+/* footer area for users and zoom buttons */
+
+.footer_bar {
+    height:50px;
+    margin-left:0px;
+    background-color: #e3f3f2;
+    border-top:1px solid #b9c5c4;
+}
+
+/* pagination */
+
+.col-xs-12.pagination {
+    background-color:transparent;
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    height: 40px;
+}
+
+.pagination_bar {
+    width: 100%;
+    color: #231F20;
+    margin: 7px 20px 10px 0px !important;
+    height: 40px;
+}
+
+
+.pagination_items > li.right {
+    display: inline-block;
+    list-style: none;
+    padding-right: 10px;
+    float: right;
+    margin-right: -15px;
+    font-size: 13px;
+}
+
+
+
+
+/* input field for pagination */
+input.pages {
+    height: 29px;
+    width:29px;
+    text-align:center;
+    padding: 00px;
+    border: 1px solid #b8babe;
+    border-radius: 3px;
+    margin: 0px 10px;
+}
+
+input.pages:hover {
+    border: 1px solid #00a6a0;
+    background-color: #f5fcfb;
+}
+
+/* input field for zoomn */
+input.zoom {
+    width:60px;
+    text-align:center;
+}
+
+/* this is for the text on the Create blank markup button */
+.glyphicon-class {
+    padding-left:10px;
+}
+
+.zindex100 {
+    z-index:100;
+}
