@@ -4,7 +4,7 @@
   "description": "A project to showcase ui modularization",
   "repository": {
     "type": "git",
-    "url": "ssh://git@stash.xtify.com:7999/mojo/xd-markup-ng.git"
+    "url": "ssh://git@github.com:kaustubh57/ui-module-experiment.git"
   },
   "main": "app/app.js",
   "dependencies": {
